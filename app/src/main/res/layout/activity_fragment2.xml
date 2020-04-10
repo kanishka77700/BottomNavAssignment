@@ -24,6 +24,8 @@
         android:gravity="center"
         android:textColor="#FFF"
         android:textSize="30sp"
+        android:layout_below="@id/heading2"
+        android:hint="received data"
         android:layout_marginTop="30dp"
         android:id="@+id/name2text"/>
     <EditText

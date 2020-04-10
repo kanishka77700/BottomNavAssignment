@@ -17,7 +17,7 @@ public class Fragment2 extends Fragment {
     EditText name2;
     Button add2;
     TextView finalname2;
-    String data;
+    String data = " ";
 
 
     @Override
@@ -28,16 +28,19 @@ public class Fragment2 extends Fragment {
         name2 = (EditText) view.findViewById(R.id.name2);
         add2 = (Button) view.findViewById(R.id.add2);
         finalname2 = (TextView) view.findViewById(R.id.name2text);
-        finalname2.setText(data);
+        if(data!=" ")
+        {
+            finalname2.setText(data);
+        }
+
 
         return view;
 
     }
 
 
-    public void displayreceiveddata(String senddata2)
-    {
-        data=senddata2;
+    public void updatedata(String senddata22) {
 
+       data=senddata22;
     }
 }
